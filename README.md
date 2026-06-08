@@ -24,6 +24,12 @@ https://<github-user>.github.io/availy-legal/ru/privacy-policy/
 
 The support email is configured in `assets/contact-config.js`.
 
+## Languages
+
+Language dropdown links are written directly in each HTML page header so they
+work without JavaScript. When adding a new language, add its folder at the repo
+root and add a matching option to each `.language-menu`.
+
 ## Publish With GitHub CLI
 
 Log in first:

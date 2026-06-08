@@ -16,10 +16,30 @@
       <span class="brand-mark" aria-hidden="true"></span>
       <span>Availy</span>
     </a>
-    <nav class="nav" aria-label="Юридические страницы">
-      <a href="./support/">Поддержка</a>
-      <a href="./privacy-policy/">Политика конфиденциальности</a>
-    </nav>
+    <div class="header-actions">
+      <nav class="nav" aria-label="Юридические страницы">
+        <a href="./support/">Поддержка</a>
+        <a href="./privacy-policy/">Политика конфиденциальности</a>
+      </nav>
+      <details class="language-menu">
+        <summary aria-label="Сменить язык">
+          <span class="language-current">
+            <span class="language-flag" aria-hidden="true">🇷🇺</span>
+            <span>Русский</span>
+          </span>
+        </summary>
+        <div class="language-options">
+          <a href="../en/">
+            <span class="language-flag" aria-hidden="true">🇺🇸</span>
+            <span>English</span>
+          </a>
+          <a aria-current="page" href="./">
+            <span class="language-flag" aria-hidden="true">🇷🇺</span>
+            <span>Русский</span>
+          </a>
+        </div>
+      </details>
+    </div>
   </header>
 
   <main>
@@ -31,10 +51,6 @@
           Availy помогает друзьям планировать встречи через доступность, не
           раскрывая приватные детали календаря.
         </p>
-        <div class="language-switcher" aria-label="Переключатель языка">
-          <a href="../en/">English</a>
-          <a aria-current="page" href="./">Русский</a>
-        </div>
       </div>
 
       <div class="availability-preview" aria-hidden="true">
@@ -75,4 +91,3 @@
   </footer>
 </body>
 </html>
-
