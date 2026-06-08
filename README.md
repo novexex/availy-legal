@@ -20,6 +20,10 @@ https://<github-user>.github.io/Availy-Legal/ru/support/
 https://<github-user>.github.io/Availy-Legal/ru/privacy-policy/
 ```
 
+## Support Email
+
+The support email is configured in `assets/contact-config.js`.
+
 ## Publish With GitHub CLI
 
 Log in first:
@@ -57,4 +61,3 @@ Then check the Pages status:
 ```bash
 gh api repos/{owner}/{repo}/pages --jq '.html_url'
 ```
-

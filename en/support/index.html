@@ -29,9 +29,18 @@
       <p>
         Use this page for app support, privacy questions, and issue reports.
       </p>
-      <a class="primary-action" href="https://github.com/" data-github-issue-link>
-        Open a support request
+      <a
+        class="primary-action"
+        href="#"
+        data-support-mail-link
+        data-support-subject="Availy support request"
+        data-support-body="Please describe what happened, your iOS version, and your Availy version."
+      >
+        Email support
       </a>
+      <p class="support-contact">
+        Support email: <span data-support-email-text></span>
+      </p>
       <div class="language-switcher" aria-label="Language switcher">
         <a aria-current="page" href="./">English</a>
         <a href="../../ru/support/" lang="ru">Русский</a>
@@ -83,17 +92,7 @@
     <span>Last updated June 9, 2026</span>
   </footer>
 
-  <script>
-    const issueLink = document.querySelector("[data-github-issue-link]");
-    const host = window.location.hostname;
-    const pathParts = window.location.pathname.split("/").filter(Boolean);
-
-    if (issueLink && host.endsWith(".github.io") && pathParts.length > 0) {
-      const owner = host.replace(".github.io", "");
-      const repo = pathParts[0];
-      issueLink.href = `https://github.com/${owner}/${repo}/issues/new?template=support.yml`;
-    }
-  </script>
+  <script src="../../assets/contact-config.js"></script>
+  <script src="../../assets/support-mail.js"></script>
 </body>
 </html>
-
