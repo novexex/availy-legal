@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Availy Support and Legal</title>
   <meta name="description" content="Support and privacy policy pages for Availy.">
+  <script src="../assets/theme.js"></script>
   <link rel="stylesheet" href="../assets/styles.css">
   <link rel="alternate" hreflang="en" href="./">
   <link rel="alternate" hreflang="ru" href="../ru/">
@@ -21,24 +22,37 @@
         <a href="./support/">Support</a>
         <a href="./privacy-policy/">Privacy Policy</a>
       </nav>
-      <details class="language-menu">
-        <summary aria-label="Change language">
-          <span class="language-current">
-            <span class="language-flag" aria-hidden="true">🇺🇸</span>
-            <span>English</span>
-          </span>
-        </summary>
-        <div class="language-options">
-          <a aria-current="page" href="./">
-            <span class="language-flag" aria-hidden="true">🇺🇸</span>
-            <span>English</span>
-          </a>
-          <a href="../ru/" lang="ru">
-            <span class="language-flag" aria-hidden="true">🇷🇺</span>
-            <span>Русский</span>
-          </a>
-        </div>
-      </details>
+      <div class="utility-actions">
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          data-theme-label-dark="Switch to dark theme"
+          data-theme-label-light="Switch to light theme"
+          aria-label="Switch theme"
+        >
+          <span class="theme-icon theme-icon-light" aria-hidden="true">☀</span>
+          <span class="theme-icon theme-icon-dark" aria-hidden="true">☾</span>
+        </button>
+        <details class="language-menu">
+          <summary aria-label="Change language">
+            <span class="language-current">
+              <span class="language-flag" aria-hidden="true">🇺🇸</span>
+              <span>English</span>
+            </span>
+          </summary>
+          <div class="language-options">
+            <a aria-current="page" href="./">
+              <span class="language-flag" aria-hidden="true">🇺🇸</span>
+              <span>English</span>
+            </a>
+            <a href="../ru/" lang="ru">
+              <span class="language-flag" aria-hidden="true">🇷🇺</span>
+              <span>Русский</span>
+            </a>
+          </div>
+        </details>
+      </div>
     </div>
   </header>
 

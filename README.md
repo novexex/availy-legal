@@ -30,6 +30,12 @@ Language dropdown links are written directly in each HTML page header so they
 work without JavaScript. When adding a new language, add its folder at the repo
 root and add a matching option to each `.language-menu`.
 
+## Theme
+
+The site follows the user's system light/dark preference by default through
+`prefers-color-scheme`. The header theme toggle stores a manual override in
+`localStorage`.
+
 ## Publish With GitHub CLI
 
 Log in first:

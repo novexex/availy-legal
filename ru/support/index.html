@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Поддержка Availy</title>
   <meta name="description" content="Страница поддержки Availy.">
+  <script src="../../assets/theme.js"></script>
   <link rel="stylesheet" href="../../assets/styles.css">
   <link rel="alternate" hreflang="en" href="../../en/support/">
   <link rel="alternate" hreflang="ru" href="./">
@@ -21,24 +22,37 @@
         <a aria-current="page" href="./">Поддержка</a>
         <a href="../privacy-policy/">Политика конфиденциальности</a>
       </nav>
-      <details class="language-menu">
-        <summary aria-label="Сменить язык">
-          <span class="language-current">
-            <span class="language-flag" aria-hidden="true">🇷🇺</span>
-            <span>Русский</span>
-          </span>
-        </summary>
-        <div class="language-options">
-          <a href="../../en/support/">
-            <span class="language-flag" aria-hidden="true">🇺🇸</span>
-            <span>English</span>
-          </a>
-          <a aria-current="page" href="./">
-            <span class="language-flag" aria-hidden="true">🇷🇺</span>
-            <span>Русский</span>
-          </a>
-        </div>
-      </details>
+      <div class="utility-actions">
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          data-theme-label-dark="Переключить на тёмную тему"
+          data-theme-label-light="Переключить на светлую тему"
+          aria-label="Переключить тему"
+        >
+          <span class="theme-icon theme-icon-light" aria-hidden="true">☀</span>
+          <span class="theme-icon theme-icon-dark" aria-hidden="true">☾</span>
+        </button>
+        <details class="language-menu">
+          <summary aria-label="Сменить язык">
+            <span class="language-current">
+              <span class="language-flag" aria-hidden="true">🇷🇺</span>
+              <span>Русский</span>
+            </span>
+          </summary>
+          <div class="language-options">
+            <a href="../../en/support/">
+              <span class="language-flag" aria-hidden="true">🇺🇸</span>
+              <span>English</span>
+            </a>
+            <a aria-current="page" href="./">
+              <span class="language-flag" aria-hidden="true">🇷🇺</span>
+              <span>Русский</span>
+            </a>
+          </div>
+        </details>
+      </div>
     </div>
   </header>
 
