@@ -225,6 +225,42 @@ h3 {
   padding-bottom: 52px;
 }
 
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding-bottom: 52px;
+}
+
+.language-card {
+  min-height: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  box-shadow: 0 10px 26px rgba(23, 32, 51, 0.05);
+}
+
+.language-card:hover {
+  border-color: rgba(110, 97, 232, 0.38);
+  box-shadow: var(--shadow);
+}
+
+.language-card strong {
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.language-card span {
+  color: var(--muted);
+}
+
 .page-card {
   display: block;
   min-height: 172px;
@@ -278,6 +314,33 @@ h3 {
 
 .primary-action:hover {
   background: var(--accent-strong);
+}
+
+.language-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.language-switcher a {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 11px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.language-switcher a:hover,
+.language-switcher a[aria-current="page"] {
+  border-color: rgba(110, 97, 232, 0.38);
+  color: var(--text);
 }
 
 .info-section {
@@ -350,7 +413,8 @@ h3 {
     font-size: 16px;
   }
 
-  .page-grid {
+  .page-grid,
+  .language-grid {
     grid-template-columns: 1fr;
   }
 
@@ -363,4 +427,3 @@ h3 {
     gap: 5px;
   }
 }
-

@@ -4,16 +4,20 @@
 
 Static GitHub Pages site for Availy App Store metadata.
 
-Pages:
+Canonical pages:
 
-- Support: `/support/`
-- Privacy Policy: `/privacy-policy/`
+- English support: `/en/support/`
+- English privacy policy: `/en/privacy-policy/`
+- Russian support: `/ru/support/`
+- Russian privacy policy: `/ru/privacy-policy/`
 
 After publishing, the App Store Connect URLs will look like:
 
 ```text
-https://<github-user>.github.io/Availy-Legal/support/
-https://<github-user>.github.io/Availy-Legal/privacy-policy/
+https://<github-user>.github.io/Availy-Legal/en/support/
+https://<github-user>.github.io/Availy-Legal/en/privacy-policy/
+https://<github-user>.github.io/Availy-Legal/ru/support/
+https://<github-user>.github.io/Availy-Legal/ru/privacy-policy/
 ```
 
 ## Publish With GitHub CLI

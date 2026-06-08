@@ -1,0 +1,100 @@
+<!-- Created by Artur Ilyasov -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Поддержка Availy</title>
+  <meta name="description" content="Страница поддержки Availy.">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="alternate" hreflang="en" href="../../en/support/">
+  <link rel="alternate" hreflang="ru" href="./">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../" aria-label="Главная Availy на русском">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Availy</span>
+    </a>
+    <nav class="nav" aria-label="Юридические страницы">
+      <a aria-current="page" href="./">Поддержка</a>
+      <a href="../privacy-policy/">Политика конфиденциальности</a>
+    </nav>
+  </header>
+
+  <main class="content-page">
+    <section class="page-heading">
+      <p class="eyebrow">Поддержка</p>
+      <h1>Нужна помощь с Availy?</h1>
+      <p>
+        Используйте эту страницу для вопросов по приложению, приватности и
+        сообщения о проблемах.
+      </p>
+      <a class="primary-action" href="https://github.com/" data-github-issue-link>
+        Открыть запрос в поддержку
+      </a>
+      <div class="language-switcher" aria-label="Переключатель языка">
+        <a href="../../en/support/">English</a>
+        <a aria-current="page" href="./">Русский</a>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <h2>Что указать в обращении</h2>
+      <ul>
+        <li>Версию iOS.</li>
+        <li>Версию Availy, если она видна в приложении или App Store.</li>
+        <li>Что вы ожидали увидеть.</li>
+        <li>Что произошло на самом деле.</li>
+        <li>Шаги, которые помогают повторить проблему.</li>
+      </ul>
+    </section>
+
+    <section class="info-section">
+      <h2>FAQ</h2>
+
+      <article class="faq-item">
+        <h3>Друзья видят детали моих событий календаря?</h3>
+        <p>
+          Availy спроектирован так, чтобы делиться статусом доступности, а не
+          приватными деталями событий: названиями, местами или участниками.
+        </p>
+      </article>
+
+      <article class="faq-item">
+        <h3>В Availy есть экран логина?</h3>
+        <p>
+          Availy использует анонимную авторизацию, чтобы разделять данные каждой
+          установки приложения без логина и пароля.
+        </p>
+      </article>
+
+      <article class="faq-item">
+        <h3>Где прочитать политику конфиденциальности?</h3>
+        <p>
+          Актуальная политика доступна на странице
+          <a href="../privacy-policy/">Политика конфиденциальности</a>.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Availy</span>
+    <span>Обновлено 9 июня 2026</span>
+  </footer>
+
+  <script>
+    const issueLink = document.querySelector("[data-github-issue-link]");
+    const host = window.location.hostname;
+    const pathParts = window.location.pathname.split("/").filter(Boolean);
+
+    if (issueLink && host.endsWith(".github.io") && pathParts.length > 0) {
+      const owner = host.replace(".github.io", "");
+      const repo = pathParts[0];
+      issueLink.href = `https://github.com/${owner}/${repo}/issues/new?template=support.yml`;
+    }
+  </script>
+</body>
+</html>
+
