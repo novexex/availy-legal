@@ -14,10 +14,10 @@ Canonical pages:
 After publishing, the App Store Connect URLs will look like:
 
 ```text
-https://<github-user>.github.io/Availy-Legal/en/support/
-https://<github-user>.github.io/Availy-Legal/en/privacy-policy/
-https://<github-user>.github.io/Availy-Legal/ru/support/
-https://<github-user>.github.io/Availy-Legal/ru/privacy-policy/
+https://<github-user>.github.io/availy-legal/en/support/
+https://<github-user>.github.io/availy-legal/en/privacy-policy/
+https://<github-user>.github.io/availy-legal/ru/support/
+https://<github-user>.github.io/availy-legal/ru/privacy-policy/
 ```
 
 ## Support Email
@@ -35,7 +35,7 @@ gh auth login
 Create the public GitHub repository and push this local repo:
 
 ```bash
-gh repo create Availy-Legal --public --source=. --remote=origin --push
+gh repo create availy-legal --public --source=. --remote=origin --push
 ```
 
 Enable GitHub Pages from the `main` branch root:
