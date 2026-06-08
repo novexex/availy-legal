@@ -1,0 +1,93 @@
+<!-- Created by Artur Ilyasov -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Availy Support</title>
+  <meta name="description" content="Support page for Availy.">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../" aria-label="Availy legal home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Availy</span>
+    </a>
+    <nav class="nav" aria-label="Legal pages">
+      <a aria-current="page" href="./">Support</a>
+      <a href="../privacy-policy/">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main class="content-page">
+    <section class="page-heading">
+      <p class="eyebrow">Support</p>
+      <h1>Need help with Availy?</h1>
+      <p>
+        Use this page for app support, privacy questions, and issue reports.
+      </p>
+      <a class="primary-action" href="https://github.com/" data-github-issue-link>
+        Open a support request
+      </a>
+    </section>
+
+    <section class="info-section">
+      <h2>What to include</h2>
+      <ul>
+        <li>Your iOS version.</li>
+        <li>The Availy app version, if visible in the app or App Store.</li>
+        <li>What you expected to happen.</li>
+        <li>What actually happened.</li>
+        <li>Steps that reproduce the issue.</li>
+      </ul>
+    </section>
+
+    <section class="info-section">
+      <h2>FAQ</h2>
+
+      <article class="faq-item">
+        <h3>Can friends see my calendar event details?</h3>
+        <p>
+          Availy is designed to share availability status, not private event
+          details such as titles, locations, or participants.
+        </p>
+      </article>
+
+      <article class="faq-item">
+        <h3>Does Availy use a login screen?</h3>
+        <p>
+          Availy uses anonymous authentication so each app install can keep its
+          data separated without requiring a username and password.
+        </p>
+      </article>
+
+      <article class="faq-item">
+        <h3>Where can I read the privacy policy?</h3>
+        <p>
+          The current privacy policy is available on the
+          <a href="../privacy-policy/">Privacy Policy page</a>.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Availy</span>
+    <span>Last updated June 9, 2026</span>
+  </footer>
+
+  <script>
+    const issueLink = document.querySelector("[data-github-issue-link]");
+    const host = window.location.hostname;
+    const pathParts = window.location.pathname.split("/").filter(Boolean);
+
+    if (issueLink && host.endsWith(".github.io") && pathParts.length > 0) {
+      const owner = host.replace(".github.io", "");
+      const repo = pathParts[0];
+      issueLink.href = `https://github.com/${owner}/${repo}/issues/new?template=support.yml`;
+    }
+  </script>
+</body>
+</html>
+
